@@ -11,4 +11,16 @@ public class IndexController {
 	public String index(Model model) {
 		return "Index";
 	}
+	@GetMapping({"/catalogo,","/catalogo"})
+	public String Catalogo(Model model) {
+		return "catalogo";
+	}
+	@GetMapping({"/Bot,","/bot"})
+	public String Bot(Model model) {
+		return "bot";
+	}
+	@GetMapping({"/about,","/about"})
+	public String About(Model model) {
+		return "about";
+	}
 }
